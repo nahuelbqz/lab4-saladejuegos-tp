@@ -1,0 +1,40 @@
+<section class="mayormenor-container">
+    
+<div class="d-flex justify-content-center align-items-center min-100vh">
+    <div class="container d-flex flex-column justify-content-center" *ngIf="user">
+        
+        <button routerLink="/juegos" class="btnVolver">VOLVER</button>
+        <h1 class="titulo-mayormenor">MAYOR O MENOR</h1>
+      <p class="puntuacion">
+        Puntuación: {{ puntaje }}
+        <span class="intentos">(Intentos: {{ attempts }}/10)</span>
+      </p>
+      <!-- <p class="juego-terminado" *ngIf="gameOver">
+        {{ textGameOver }}
+      </p> -->
+      <div class="row">
+        <div class="col">
+          <img class="carta-izquierda" src="{{ cardImage }}" alt=""/>
+        </div>
+        <div class="col">
+          <img class="carta-derecha" src="../../../../assets/mayor-menor/card-back-red.png" alt=""/>
+        </div>
+      </div>
+
+      <div *ngIf="!activeGame">
+        <button class="btn-comenzar-reiniciar" (click)="startGame()">
+          {{ startButtonText }}
+        </button>
+      </div>
+      <div class="btn-mayormenor" *ngIf="activeGame">
+        <button class="btn-menor" (click)="playMayorMenor('menor')">Menor</button>
+        <button class="btn-mayor" (click)="playMayorMenor('mayor')">Mayor</button>
+      </div>
+    </div>
+    
+    <button (click)="empezarNuevoJuego()" class="btnJugarNuevo">
+        REINICIAR JUEGO
+    </button>
+
+</div>
+  </section>

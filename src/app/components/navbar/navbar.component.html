@@ -1,0 +1,21 @@
+<header>
+    <a routerLink="/" class="logo">
+        <img src="../../../assets/icons8-apple-arcade-250.png" alt="">
+        <h1>SALA DE JUEGOS</h1>
+    </a>
+    <nav>
+        <a routerLink="/home">Home</a>
+        <a routerLink="/quien-soy">Quien soy</a>
+        <a routerLink="/juegos" >Juegos</a>
+   
+        @if(authService.currentUserSig() == null || authService.currentUserSig() == undefined){
+            <button class="btn btn-success" routerLink="/login" >Login</button>
+            <button class="btn btn-primary" routerLink="/registro">Registro</button>
+        }
+        @else{
+            <a routerLink="/chat" >Chat</a>
+            <p class="p-nav">{{(authService.currentUserSig())?.nombre}}</p>
+            <button class="btn btn-danger" (click)="cerrarSesion()">Cerrar sesion</button>    
+        }
+    </nav>
+</header>

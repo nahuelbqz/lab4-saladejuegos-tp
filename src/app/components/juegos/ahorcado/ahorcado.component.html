@@ -1,0 +1,49 @@
+<meta charset="utf-8" />
+<div class="d-flex justify-content-center align-items-center min-100vh">
+  
+  <div class="container">
+    
+  <button routerLink="/juegos" class="btnVolver">VOLVER</button>
+    <div class="text-center">
+      <h1 class="">A H O R C A D O</h1>
+    </div>
+    <div class="row mt-5 align-items-center">
+      <div class="col-lg-6 col-12 text-center"> 
+        <!-- en el img src= {{ intentos }} -->
+        <img 
+          src="../../../../assets/ahorcado/wood-hang.png" 
+          class="ahorcado-img"
+          alt="ahorcado"
+          title="ahorcado"
+        />
+        <h3 class="intentosContainer">
+          INTENTOS: <small>{{ intentos }} / 7 </small>
+        </h3>
+      </div>
+      <div class="col-lg-6 col-12 text-center">
+        <div>
+          <h1>{{ palabraOculta }}</h1>
+        </div>
+        @if(!gano && !perdio) {
+        <div class="p-3 containerBtn">
+          <div class="text-center">
+            <button
+              (click)="comprobar(letra)"
+              *ngFor="let letra of letras; let i = index"
+              class="btn"
+              [disabled]="!botonesHabilitados[i]"
+            >
+              {{ letra.toUpperCase() }}
+            </button>
+          </div>
+        </div>
+        }
+
+      </div>
+    </div>
+    <button (click)="empezarNuevoJuego()" class="btnJugarNuevo">
+        REINICIAR JUEGO
+    </button>
+
+  </div>
+</div>

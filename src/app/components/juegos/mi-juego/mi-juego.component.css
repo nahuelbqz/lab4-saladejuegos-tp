@@ -1,0 +1,137 @@
+.container{
+    background-image: url("../../../../assets/saladejuegos-bg.jpg");
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.container-juego{
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 100px;
+    background-color: rgba(222, 221, 221, 0.5);
+}
+
+.memo-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 45px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    color: #000;
+    font-size: 70px;
+    font-weight: bolder;
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 8px;
+    background-color: #333;
+    cursor: pointer;
+}
+  
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+}
+
+.btnVolver{
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    margin: 5px;
+    border-radius: 10px;
+    height: 50px;
+    width: 80px;
+    border: 3px solid #000000;
+    background-color: #f70;
+    font-weight: bolder;
+}
+.btnVolver:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.7);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.btnJugarNuevo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 35px;
+    height: 90px;
+    width: 120px;
+    font-weight: bolder;
+    background-color: #f70;
+    border-radius: 10px;
+    border: 3px solid #000000;
+}
+.btnJugarNuevo:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.7);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+/*///////////////////////////////////////////////// */
+
+#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .square {
+    width: 30%;
+    background-color: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    transition: background .5s;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    /* o-transition: background .5s; */
+    border-radius: 20%;
+  }
+  
+
+
+  #color-display {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    display: block;
+    font-size: 2em;
+  }
+  
+  
+  #message {
+    text-transform: uppercase;
+    color: #2C8E99;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 20%;
+  }
+  
+
+  button:hover {
+    background-color: #2C8E99;
+    color: white;
+  }
+  
+  .selected {
+    background-color: #2C8E99;
+    color: white;
+  }

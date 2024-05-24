@@ -1,0 +1,52 @@
+html, body {
+  height: 100%;
+}
+
+.container-login{
+  display: flex;
+  background-image: url("../../../assets/saladejuegos-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+h1{
+  color: #f70;
+}
+
+.p-nuevo-usuario{
+  color:#f70
+}
+a{
+  color: #fff;
+}
+
+.form-signin {
+  /* centrarlo mejor */
+  margin: 120px 38%;
+
+  max-height: 450px;
+  max-width: 430px;
+  padding: 1rem;
+  background-color: #000;
+  border-radius: 10px;
+
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

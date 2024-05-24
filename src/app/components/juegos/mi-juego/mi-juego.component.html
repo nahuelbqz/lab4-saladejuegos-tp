@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center min-100vh">
+
+        <div class="container-juego">
+            
+            <button routerLink="/juegos" class="btnVolver">VOLVER</button>
+        
+            <div class="row">
+                <h1>JUEGO RGB</h1>
+            </div>
+
+            <div class="memo-container row">
+
+                <span id="color-display">{{ pickedColor }}</span>
+
+                <div id="container">
+                  <div *ngFor="let color of colors; let i = index" class="square"
+                       [style.backgroundColor]="color"
+                       (click)="handleSquareClick(color, square)"
+                       #square>
+                  </div>
+                </div>
+                
+            </div>
+
+        </div>
+    <button (click)="empezarNuevoJuego()" class="btnJugarNuevo">
+        REINICIAR JUEGO
+    </button>
+    </div>
+</div>
+  

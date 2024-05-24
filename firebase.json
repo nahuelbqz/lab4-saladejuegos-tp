@@ -1,0 +1,23 @@
+{
+  "hosting": [
+    {
+      "public": "dist/saladejuegos-tp/browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "saladejuegos-tp",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

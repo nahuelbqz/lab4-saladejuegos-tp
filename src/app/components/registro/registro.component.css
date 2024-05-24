@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+}
+
+.container-registro{
+  display: flex;
+  background-image: url("../../../assets/saladejuegos-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+h1{
+  color: #f70;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+  margin-top: 40%;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

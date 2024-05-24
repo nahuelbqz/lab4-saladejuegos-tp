@@ -1,0 +1,109 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.min-100vh{
+  min-height: 100vh;
+	min-width: 100%;
+	background-image: url("../../../assets/saladejuegos-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-color: #fff;
+}
+.chat-container {
+  width: 70vw;
+  height: 70vh;
+  margin: 20px 20px;
+  border: 3px solid #000;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  background: rgb(79, 79, 79);
+}
+.chat-header {
+  padding: 15px;
+  border-bottom: 5px solid #f70;
+  color: #f70;
+  margin-bottom: 8px;
+  font-size: 1.4em;
+  font-weight: bold;
+  background: #000;
+}
+.chat-mensajes{
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #000;
+  width: 65vw;
+  height: 55vh;
+  font-size: 1em;
+  width: calc(100% - 15px);
+  overflow-y: scroll;
+}
+
+.chat-form {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: calc(100% - 20px);
+}
+.chat-container input[type="text"] {
+  width: calc(100% - 70px);
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #000;
+  font-family: "Montserrat", sans-serif;
+}
+.chat-container input[type="submit"] {
+  width: 70px;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-left: -1px;
+  border: 1px solid #000;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.chat-container input[type="submit"]:hover {
+  background: #f70;
+}
+.enviado {
+  margin-right: 15px;
+  padding: 0.5rem;
+  display: block;
+  float: right;
+  background-color: rgb(17, 123, 81);
+  color: white;
+  min-width: 50.01%;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 80%;
+}
+
+p span {
+  font-size: 20px;
+}
+.user{
+  font-weight: bolder;
+}
+.recibido {
+  margin-left: 15px;
+  padding: 0.5rem;
+  display: block;
+  float: left;
+  background-color: rgb(106, 25, 0);
+  color: white;
+  min-width: 50.01%;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 80%;
+}
+
+.fecha-mensaje{
+  font-size: 15px !important;
+  float: right;
+  display: block;
+  text-align: right;
+}

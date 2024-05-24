@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center min-100vh">
+
+        <div class="container-juego">
+            
+            <button routerLink="/juegos" class="btnVolver">VOLVER</button>
+        
+            <div class="row">
+                <h1>MEMOGRAMA</h1>
+
+            </div>
+
+            <div class="memo-container row">
+                <div *ngFor="let color of shuffledColors; let i = index" class="card" [attr.data-color]="color" (click)="handleCardClick($event.target)"></div>
+            </div>
+        </div>
+        <div class="message" *ngIf="message">{{ message }}</div>
+
+    </div>
+</div>
+  

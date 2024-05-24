@@ -1,0 +1,30 @@
+<div class="d-flex justify-content-center align-items-center min-100vh">
+
+  <div class="chat-container">
+  <div class="chat-header">CHAT SALA DE JUEGOS</div>
+    <div class="chat-mensajes">
+        <!-- aca los msj del chat? -->
+        @for(mensaje of mensaje; track mensaje.user) {
+          <!-- si el auth user coincide con el mensaje.user es ENVIADO -->
+          <!-- @if(this.authService.currentUserSig()?.email === mensaje.userEmail){ -->
+            <p [ngClass]="this.authService.currentUserSig()?.email === mensaje.user ? 'enviado': 'recibido'">
+              <span class="user">
+                {{mensaje.user}}
+              </span>
+              <br>{{mensaje.texto}}<br>
+              <span class="fecha-mensaje">
+                {{mensaje.fecha}}
+              </span>
+            </p>
+          <!-- } -->
+
+        }
+    </div>
+
+    <form class="chat-form">
+      <input type="text" name="nuevoMensaje" class="ss-q-short" placeholder="Mensaje" [(ngModel)]="nuevoMensaje">
+      <input type="submit" name="submit" class="ss-submit"  value="Enviar" (click)="enviarMensaje()">
+    </form>
+</div>
+
+</div>

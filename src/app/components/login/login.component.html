@@ -1,0 +1,32 @@
+
+<div class="container-login">
+
+<div class="form-signin w-100 ">
+    <form class="form-login">
+      <h1 class="h3 mb-3 fw-normal">Iniciar sesion</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+        [(ngModel)]="email" name="correo" required>
+  
+        <label for="floatingInput">Email</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+        [(ngModel)]="password" name="password" required>
+  
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <p class="p-nuevo-usuario">Nuevo usuario? Haga <a routerLink="/registro">click aqui</a></p>
+
+      <button class="btn btn-primary w-100 py-2" style="margin-bottom: 6px;" type="submit" (click)="onIniciarSesion()">Iniciar sesion</button>
+      <button class="btn btn-warning w-100 py-2"  type="submit" (click)="onAccesoRapido(1)">Acceso rapido 1</button>
+      <button class="btn btn-warning w-100 py-2"  type="submit" (click)="onAccesoRapido(2)">Acceso rapido 2</button>
+      <br> <br>
+      <button class="btn btn-dark w-100 py-2" type="submit" (click)="reiniciar()">Reiniciar</button>
+
+    </form>
+  </div>
+
+</div>
